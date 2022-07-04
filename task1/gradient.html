@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gradient</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
   <style>
     html,
     body,
@@ -26,26 +29,74 @@
       display: inline-block;
       width: calc(100% / 7);
       height: 100%;
-      font-size: 70px;
-      text-align: center;
-      vertical-align: middle;
+      font-family: 'Philosopher', sans-serif;
+      font-size: 140px;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgb(0 0 0);
+      position: relative;
     }
 
     .letter__item {
-      vertical-align: middle;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .letter_gradient_a {
+      background: linear-gradient(to top, #93291E, #ED213A);
+    }
+
+    .letter_gradient_r {
+      background: linear-gradient(to bottom, #355C7D, #BF6C84);
+    }
+
+    .letter_gradient_s {
+      background: linear-gradient(to top, #FE8235, #30E8BF);
+    }
+
+    .letter_gradient_e {
+      background: linear-gradient(to bottom, #5A3F37, #2C7744);
+    }
+
+    .letter_gradient_n {
+      background: linear-gradient(to top, #FFECBC, #ED4264);
+    }
+
+    .letter_gradient_a {
+      background: linear-gradient(to bottom, #EC213A, #93291E);
+    }
+
+    .letter_gradient_l {
+      background: linear-gradient(to top, #B19E93, #603813);
     }
   </style>
 </head>
 
 <body>
   <div class="page">
-    <div class="letter letter__item letter_gradient_1">a</div>
-    <div class="letter letter__item letter_gradient_2">r</div>
-    <div class="letter letter__item letter_gradient_3">s</div>
-    <div class="letter letter__item letter_gradient_4">e</div>
-    <div class="letter letter__item letter_gradient_5">n</div>
-    <div class="letter letter__item letter_gradient_6">a</div>
-    <div class="letter letter__item letter_gradient_7">l</div>
+    <div class="letter letter_gradient_a">
+      <div class="letter__item">a</div>
+    </div>
+    <div class="letter letter_gradient_r">
+      <div class="letter__item">r</div>
+    </div>
+    <div class="letter letter_gradient_s">
+      <div class="letter__item">s</div>
+    </div>
+    <div class="letter letter_gradient_e">
+      <div class="letter__item">e</div>
+    </div>
+    <div class="letter letter_gradient_n">
+      <div class="letter__item">n</div>
+    </div>
+    <div class="letter letter_gradient_a">
+      <div class="letter__item">a</div>
+    </div>
+    <div class="letter letter_gradient_l">
+      <div class="letter__item">l</div>
+    </div>
   </div>
 </body>
 
