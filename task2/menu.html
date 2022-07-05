@@ -19,20 +19,58 @@
 
     .page {
       height: 100%;
-      background: rgb(242, 241, 241);
+      background: #f2f1f1;
     }
 
-    .header {}
+    .header {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background: #fff;
+      box-shadow: 0px 1px 4px 0px #a0a0a0;
+    }
 
-    .logo {}
+    .header::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
 
-    .navigation {}
+    .logo {
+      float: left;
+      padding: 20px;
+      font-size: 40px;
+    }
 
-    .navigation__list {}
+    .navigation {
+      float: right;
+    }
 
-    .navigation__item {}
+    .navigation__list {
+      margin: 0;
+      list-style: none;
+      font-size: 0;
+    }
 
-    .navigation__link {}
+    .navigation__item {
+      display: inline-block;
+      font-size: 22px;
+      border-left: 1px solid #f2f1f1;
+    }
+
+    .navigation__item:nth-of-type(1) {
+      border: none;
+    }
+
+    .navigation__link {
+      display: inherit;
+      padding: 30px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .navigation__link:hover {
+      background: #f2f1f1;
+    }
   </style>
 </head>
 <!-- 👉 Завдання 2. Меню.
@@ -51,7 +89,7 @@
         <li class="navigation__item"><a href="#our-work" class="navigation__link">Our Work</a></li>
         <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
         <li class="navigation__item"><a href="#careers" class="navigation__link">Careers</a></li>
-        <li class="navigation__item"><a href="#contac " class="navigation__link">Contact</a></li>
+        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
       </ul>
     </nav>
   </header>
