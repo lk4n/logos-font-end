@@ -29,10 +29,8 @@
       box-shadow: 0px 1px 4px 0px #a0a0a0;
     }
 
-    .header::after {
-      content: "";
-      display: block;
-      clear: both;
+    .header_float_fix {
+      overflow: hidden;
     }
 
     .logo {
@@ -55,7 +53,6 @@
 
     .navigation__item {
       display: inline-block;
-      font-size: 22px;
       border-left: 1px solid #f2f1f1;
     }
 
@@ -64,39 +61,36 @@
     }
 
     .navigation__link {
-      display: inherit;
+      display: inline-block;
       padding: 30px;
-      text-decoration: none;
+      font-size: 22px;
+      line-height: 26px;
       color: inherit;
+      text-decoration: none;
+      outline: none;
     }
 
-    .navigation__link:hover {
+    .navigation__link:hover,
+    .navigation__link:focus {
       background: #f2f1f1;
     }
   </style>
 </head>
-<!-- 👉 Завдання 2. Меню.
-Зверстати меню як на відео, використовуючи різного роду CSS стилі. 
-Для кращого засвоєння можете додатково зробити випадаюче меню, бокове анімоване меню, меню з іконками і т.д.  
-Спробуйте проексперементувати з різними видами меню для сайту. -->
 
 <body>
-
+  <div class="page">
+    <header class="header header_float_fix">
+      <div class="logo">CSS Nav</div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#our-work" class="navigation__link">Our Work</a></li>
+          <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="#careers" class="navigation__link">Careers</a></li>
+          <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 </body>
-<div class="page">
-  <header class="header">
-    <div class="logo">CSS Nav</div>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a href="#our-work" class="navigation__link">Our Work</a></li>
-        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-        <li class="navigation__item"><a href="#careers" class="navigation__link">Careers</a></li>
-        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main></main>
-  <footer></footer>
-</div>
 
 </html>
