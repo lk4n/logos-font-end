@@ -53,11 +53,9 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      font-size: 0;
     }
 
     .navigation__item {
-      display: inline-block;
       border-left: 1px solid #f2f1f1;
     }
 
@@ -79,6 +77,20 @@
     .navigation__link:focus {
       background: #f2f1f1;
     }
+
+    .navigation__list_inline {
+      font-size: 0;
+    }
+
+    .navigation__list_inline .navigation__item {
+      display: inline-block;
+    }
+
+    .navigation__list_float {}
+
+    .navigation__list_float .navigation__item {
+      float: left;
+    }
   </style>
 </head>
 
@@ -87,7 +99,7 @@
     <header class="header header_float_fix">
       <div class="logo header_float_left">CSS Nav</div>
       <nav class="navigation header_float_right">
-        <ul class="navigation__list">
+        <ul class="navigation__list navigation__list_inline">
           <li class="navigation__item"><a href="#our-work" class="navigation__link">Our Work</a></li>
           <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
           <li class="navigation__item"><a href="#careers" class="navigation__link">Careers</a></li>
