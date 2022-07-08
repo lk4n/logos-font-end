@@ -29,20 +29,25 @@
       box-shadow: 0px 1px 4px 0px #a0a0a0;
     }
 
+    .header_float_left {
+      float: left;
+    }
+
+    .header_float_right {
+      float: right;
+    }
+
     .header_float_fix {
       overflow: hidden;
     }
 
     .logo {
-      float: left;
       padding: 20px;
       font-size: 40px;
       line-height: 46px;
     }
 
-    .navigation {
-      float: right;
-    }
+    .navigation {}
 
     .navigation__list {
       margin: 0;
@@ -80,8 +85,8 @@
 <body>
   <div class="page">
     <header class="header header_float_fix">
-      <div class="logo">CSS Nav</div>
-      <nav class="navigation">
+      <div class="logo header_float_left">CSS Nav</div>
+      <nav class="navigation header_float_right">
         <ul class="navigation__list">
           <li class="navigation__item"><a href="#our-work" class="navigation__link">Our Work</a></li>
           <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
